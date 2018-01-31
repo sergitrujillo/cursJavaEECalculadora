@@ -9,7 +9,7 @@ package com.ba.curs.calculadora.calculs;
  *
  * @author Sergi
  */
-public interface Calculable {
+public interface ICalculatorService {
     
     public int suma(int num1, int num2);
     public int resta(int num1, int num2);

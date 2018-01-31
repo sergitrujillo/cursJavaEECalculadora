@@ -5,7 +5,6 @@
  */
 package com.ba.curs.calculadora.servlets;
 
-import com.ba.curs.calculadora.calculs.Calculable;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Optional;
@@ -14,6 +13,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import com.ba.curs.calculadora.calculs.ICalculatorService;
 
 /**
  *
@@ -22,7 +22,7 @@ import javax.servlet.http.HttpServletResponse;
 public class CalculadoraServlet extends HttpServlet {
 
     @Inject
-    private Calculable calculadora;
+    private ICalculatorService calculadora;
 
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {

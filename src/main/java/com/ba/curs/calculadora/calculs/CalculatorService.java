@@ -13,7 +13,7 @@ import javax.enterprise.inject.Alternative;
  * @author Sergi
  */
 @Alternative
-public class Calculadora implements Calculable{
+public class CalculatorService implements ICalculatorService{
 
 
     @Override
