@@ -11,11 +11,11 @@ import javax.enterprise.util.AnnotationLiteral;
  *
  * @author Sergi
  */
-public class OperationNameImpl extends AnnotationLiteral<OperationName> implements OperationName{
+public class OperationNameLiteral extends AnnotationLiteral<OperationName> implements OperationName{
 
     public final String name;
 
-    public OperationNameImpl(String name) {
+    public OperationNameLiteral(String name) {
         this.name = name;
     }
     

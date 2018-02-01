@@ -13,7 +13,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import com.ba.curs.calculadora.calculs.OperationNameImpl;
+import com.ba.curs.calculadora.calculs.OperationNameLiteral;
 import java.lang.annotation.Annotation;
 import javax.enterprise.inject.Any;
 import javax.enterprise.inject.Instance;
@@ -44,7 +44,7 @@ public class CalculadoraServlet extends HttpServlet {
             try {
                 int num1 = Integer.parseInt(request.getParameter("num1"));
                 int num2 = Integer.parseInt(request.getParameter("num2"));
-                Operation op = this.operation.select(new OperationNameImpl(operacio)).get();
+                Operation op = this.operation.select(new OperationNameLiteral(operacio)).get();
                 resultat = String.format(resultatPattern, num1, operacio, num2, op.operacio(num1, num2));
 
             } catch (NumberFormatException ex) {

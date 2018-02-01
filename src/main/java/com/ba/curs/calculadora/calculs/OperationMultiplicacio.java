@@ -17,7 +17,7 @@ public class OperationMultiplicacio implements Operation{
 
     @Override
     public int operacio(int num1, int num2) {
-        return num1 + num2;
+        return num1 * num2;
     }
     
 }
