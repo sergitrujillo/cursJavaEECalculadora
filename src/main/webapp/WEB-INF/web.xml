@@ -20,6 +20,10 @@
         <servlet-name>SportsServlet</servlet-name>
         <servlet-class>com.ba.curs.enumqualifiers.SportsServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>DatabaseServlet</servlet-name>
+        <servlet-class>com.ba.curs.database.DatabaseServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>CalculadoraServlet</servlet-name>
         <url-pattern>/CalculadoraServlet</url-pattern>
@@ -39,6 +43,10 @@
     <servlet-mapping>
         <servlet-name>SportsServlet</servlet-name>
         <url-pattern>/SportsServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DatabaseServlet</servlet-name>
+        <url-pattern>/DatabaseServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
