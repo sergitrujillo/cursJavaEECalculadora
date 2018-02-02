@@ -4,9 +4,33 @@
         <servlet-name>CalculadoraServlet</servlet-name>
         <servlet-class>com.ba.curs.calculadora.servlets.CalculadoraServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>CustomerServlet</servlet-name>
+        <servlet-class>com.ba.curs.customers.servlets.CustomerServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>BookServlet</servlet-name>
+        <servlet-class>com.ba.curs.inteceptors.BookServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>HelloWorldServlet</servlet-name>
+        <servlet-class>com.ba.curs.qualifiers.HelloWorldServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>CalculadoraServlet</servlet-name>
         <url-pattern>/CalculadoraServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CustomerServlet</servlet-name>
+        <url-pattern>/CustomerServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>BookServlet</servlet-name>
+        <url-pattern>/BookServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>HelloWorldServlet</servlet-name>
+        <url-pattern>/HelloWorldServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

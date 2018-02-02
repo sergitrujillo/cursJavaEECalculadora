@@ -5,5 +5,9 @@
        bean-discovery-mode="all">
     <alternatives>
         <!--<class>com.ba.curs.calculadora.calculs.CalculatorService</class>-->
+        <class>com.ba.curs.customers.servicealternative.CustomerServiceMock</class>
     </alternatives>
+    <interceptors>
+        <class>com.ba.curs.inteceptors.LoggingInterceptor</class>
+    </interceptors>
 </beans>
