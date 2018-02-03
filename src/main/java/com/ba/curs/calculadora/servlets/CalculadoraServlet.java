@@ -7,19 +7,14 @@ package com.ba.curs.calculadora.servlets;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.Optional;
 import javax.inject.Inject;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import com.ba.curs.calculadora.calculs.OperationNameLiteral;
-import java.lang.annotation.Annotation;
 import javax.enterprise.inject.Any;
 import javax.enterprise.inject.Instance;
-import javax.enterprise.inject.spi.CDI;
-import javax.enterprise.util.AnnotationLiteral;
-import javax.inject.Named;
 import com.ba.curs.calculadora.calculs.Operation;
 
 /**

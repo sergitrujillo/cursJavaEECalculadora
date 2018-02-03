@@ -10,4 +10,7 @@
     <interceptors>
         <class>com.ba.curs.inteceptors.LoggingInterceptor</class>
     </interceptors>
+    <decorators>
+        <class>com.ba.curs.decorators.OperationDecorator</class>
+    </decorators>
 </beans>
