@@ -24,6 +24,10 @@
         <servlet-name>DatabaseServlet</servlet-name>
         <servlet-class>com.ba.curs.database.DatabaseServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>OperationServlet</servlet-name>
+        <servlet-class>com.ba.curs.produces.OperationServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>CalculadoraServlet</servlet-name>
         <url-pattern>/CalculadoraServlet</url-pattern>
@@ -47,6 +51,10 @@
     <servlet-mapping>
         <servlet-name>DatabaseServlet</servlet-name>
         <url-pattern>/DatabaseServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>OperationServlet</servlet-name>
+        <url-pattern>/OperationServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
