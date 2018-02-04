@@ -28,6 +28,10 @@
         <servlet-name>OperationServlet</servlet-name>
         <servlet-class>com.ba.curs.produces.OperationServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>EventsServlet</servlet-name>
+        <servlet-class>com.ba.curs.events.EventsServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>CalculadoraServlet</servlet-name>
         <url-pattern>/CalculadoraServlet</url-pattern>
@@ -55,6 +59,10 @@
     <servlet-mapping>
         <servlet-name>OperationServlet</servlet-name>
         <url-pattern>/OperationServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EventsServlet</servlet-name>
+        <url-pattern>/EventsServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
